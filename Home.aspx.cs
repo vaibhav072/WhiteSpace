@@ -19,8 +19,8 @@ namespace JiraMetrics
         {										
             if (FileUpload1.HasFile)
             {
-                path = string.Concat(Server.MapPath("~/Content/" + FileUpload1.FileName));
-                FileUpload1.SaveAs(path); //DefaultConnection
+                path = string.Concat(Server.MapPath("~/Content/" + FileUpload1.FileName)); // add
+                FileUpload1.SaveAs(path); //DefaultConnection has been placed
             }
         }
     }
